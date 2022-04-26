@@ -1,5 +1,6 @@
 package web.service;
 
+<<<<<<< HEAD
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import web.dao.CarDao;
@@ -26,4 +27,7 @@ public class CarServiceImpl implements CarService{
     public List<Car> show(int id) {
         return carDao.show(id);
     }
+=======
+public class CarServiceImpl {
+>>>>>>> origin/master
 }
