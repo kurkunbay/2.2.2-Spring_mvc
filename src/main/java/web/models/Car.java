@@ -5,7 +5,8 @@ public class Car {
     private String color;
     private int price;
 
-    public Car(){}
+    public Car() {
+    }
 
     public Car(String marka, String color, int price) {
         this.marka = marka;

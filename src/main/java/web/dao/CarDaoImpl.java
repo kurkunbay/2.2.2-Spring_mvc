@@ -1,14 +1,14 @@
 package web.dao;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import web.models.Car;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Component
-public class CarDaoImpl implements CarDao {
+@Repository
+public class CarDaoImpl implements CarDAO {
     private List<Car> cars;
 
     {
@@ -21,10 +21,11 @@ public class CarDaoImpl implements CarDao {
         cars.add(new Car("YAZ", "grey", 150000));
     }
 
-    public List<Car> index(){
+    public List<Car> index() {
         return cars;
     }
-    public List<Car> show(int id){
+
+    public List<Car> show(int id) {
         return cars.stream().limit(id).collect(Collectors.toList());
     }
 }
